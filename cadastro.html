@@ -1,9 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>FrontEnders</title>
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/headers/">
@@ -42,11 +44,17 @@
 
   <main class="form-signin">
     <form>
-      <img class="mb-4" src="assets/img/logo.png" alt="" width="72" height="57">
-      <h1 class="h3 mb-3 fw-normal">Cadastro</h1>
+      <img class="mb-4" src="assets/img/logo.png" alt="" width="auto" height="75">
+      <h1 class="h1 mb-3 fw-normal">Cadastro</h1>
       <div class="form-floating">
         <p class="mt-5 mb-3 text-muted">Preencha todos os dados para se registrar.</p>
       </div>
+
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingInput" placeholder="usuario@exemplo.com" required>
+        <label for="floatingInput">Nome completo</label>
+      </div>
+
       <div class="form-floating">
         <input type="email" class="form-control" id="floatingInput" placeholder="usuario@exemplo.com" required>
         <label for="floatingInput">Email</label>
@@ -56,14 +64,24 @@
         <label for="floatingInput">Telefone</label>
       </div>
       <div class="form-floating">
-        <input type="text" class="form-control" id="floatingInput" placeholder="@nomedeusuario" required>
-        <label for="floatingInput">Usuário</label>
+        <input type="password" class="form-control" id="floatingInput" placeholder="usuario@exemplo.com" required>
+        <label for="floatingInput">Senha</label>
+            <small id="passwordHelpInline" class="text-muted">
+              Entre 8 e 20 caracteres.
+            </small>
       </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingInput" placeholder="usuario@exemplo.com" required>
+        <label for="floatingInput">Confirme a senha</label>
+      </div>
+
+
 
       <a href="http://"> <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
       </a>
       <p class="mt-5 mb-3 text-muted"><a href="index.html">Voltar para a página inicial</a></p>
       <p class="mt-5 mb-3 text-muted">Já é cadastrado?<br><br><a href="login.html">Ir para a página de login</a></p>
+      <br><br>
       <p>&copy; 2022-2023 FrontEnders <br> &middot; <a href="index.html">Início</a> &middot; <a href="#">Privacidade</a>
         &middot; <a href="#">Termos</a> </p>
     </form>
