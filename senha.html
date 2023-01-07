@@ -41,24 +41,29 @@
 <body class="text-center">
 
   <main class="form-signin">
-    <form>
+    <form method="get" onreset="senha()">
       <img class="mb-4" src="assets/img/logo.png" alt="" width="72" height="57">
       <h1 class="h3 mb-3 fw-normal">Recuperar a senha</h1>
       <div class="form-floating">
-        <p class="mt-5 mb-3 text-muted">Digite seu endereço de e-mail e enviaremos um link para redefinir sua senha.</p>
+        <p class="mt-5 mb-3 text-muted" id="menssagem">Digite seu endereço de e-mail e enviaremos um link para redefinir
+          sua senha.</p>
       </div>
       <div class="form-floating">
         <input type="email" class="form-control" id="floatingInput" placeholder="usuario@exemplo.com" required>
         <label for="floatingInput">Email cadastrado</label>
       </div>
-      <a href="http://"> <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
-      </a>
-      <p class="mt-5 mb-3 text-muted">&copy; 2022-2023 FrontEnders</p>
-      <p class="mt-5 mb-3 text-muted"><a href="index.html">Voltar para a página inicial</a></p>
+      <button class="w-100 btn btn-lg btn-primary" type="submit" onclick="senha()">Enviar</button>
+      <br><br>
+      <p>&copy; 2022-2023 FrontEnders <br> &middot; <a href="index.html">Início</a> &middot; <a href="#">Privacidade</a>
+        &middot; <a href="#">Termos</a> </p>
     </form>
   </main>
 
-
+  <script>
+    function senha() {
+      document.getElementById("menssagem").innerHTML = "<strong>Enviamos as instruções para redefinição da senha para o e-mail forncecido!</strong>"
+    }
+  </script>
 
 </body>
 
