@@ -1,243 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>FrontEnders</title>
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.0/examples/headers/"
-    />
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.0/examples/pricing/"
-    />
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.0/examples/features/"
-    />
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.0/examples/heroes/"
-    />
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
+  <title>FrontEnders</title>
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/headers/" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/pricing/" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/features/" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/heroes/" />
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
 
-    <!-- Custom styles for this template -->
-    <link href="assets/css/headers.css" rel="stylesheet" />
-    <link href="assets/css/heroes.css" rel="stylesheet" />
-  </head>
+  <!-- Custom styles for this template -->
+  <link href="assets/css/headers.css" rel="stylesheet" />
+  <link href="assets/css/heroes.css" rel="stylesheet" />
+</head>
+<!---->
+
+<body>
+  <!-- Barra de navegação -->
+  <div class="container">
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="login.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-code-slash"
+          viewBox="0 0 16 16">
+          <path
+            d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+        </svg>
+        <b>FrontEnders &trade;</b></a>
+
+      <ul class="nav col-10 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li>
+          <a href="index.html" class="nav-link px-2 link-secondary">Início</a>
+        </li>
+        <li>
+          <a href="planos.html" class="nav-link px-2 link-dark">Serviço</a>
+        </li>
+        <li>
+          <a href="lista.html" class="nav-link px-2 link-dark">Lista</a>
+        </li>
+        <li>
+          <a href="equipe.html" class="nav-link px-2 link-dark">Desenvolvedores</a>
+        </li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <a href="login.html"><button type="button" class="btn btn-outline-primary me-2">
+            Login
+          </button></a>
+        <a href="cadastro.html"><button type="button" class="btn btn-primary">Cadastro</button></a>
+      </div>
+    </header>
+  </div>
   <!---->
-
-  <body>
-    <!-- Barra de navegação -->
-    <div class="container">
-      <header
-        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
-      >
-        <a
-          href="login.html"
-          class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="36"
-            height="36"
-            fill="currentColor"
-            class="bi bi-code-slash"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
-            />
-          </svg>
-          <b>FrontEnders &trade;</b></a
-        >
-
-        <ul class="nav col-10 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li>
-            <a href="index.html" class="nav-link px-2 link-secondary">Início</a>
-          </li>
-          <li>
-            <a href="planos.html" class="nav-link px-2 link-dark">Serviço</a>
-          </li>
-          <li>
-            <a href="lista.html" class="nav-link px-2 link-dark">Lista</a>
-          </li>
-          <li>
-            <a href="equipe.html" class="nav-link px-2 link-dark"
-              >Desenvolvedores</a
-            >
-          </li>
-        </ul>
-
-        <div class="col-md-3 text-end">
-          <a href="login.html"
-            ><button type="button" class="btn btn-outline-primary me-2">
-              Login
-            </button></a
-          >
-          <a href="cadastro.html"
-            ><button type="button" class="btn btn-primary">Cadastro</button></a
-          >
-        </div>
-      </header>
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold">FrontEnders &trade; Studio</h1>
+    <h1 class="display-6 fw-bold">
+      É um aplicativo de desktop para projetar e prototipar sites.
+    </h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">
+        Ele vem com um grande número de componentes internos, que você pode
+        arrastar e soltar para montar páginas da Web responsivas. O aplicativo
+        é construído sobre a estrutura extremamente popular do Bootstrap e
+        exporta HTML limpo e semântico.
+      </p>
     </div>
-    <!---->
-    <div class="px-4 pt-5 my-5 text-center border-bottom">
-      <h1 class="display-4 fw-bold">FrontEnders &trade; Studio</h1>
-      <h1 class="display-6 fw-bold">
-        É um aplicativo de desktop para projetar e prototipar sites.
-      </h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">
-          Ele vem com um grande número de componentes internos, que você pode
-          arrastar e soltar para montar páginas da Web responsivas. O aplicativo
-          é construído sobre a estrutura extremamente popular do Bootstrap e
-          exporta HTML limpo e semântico.
+    <div class="overflow-hidden" style="max-height: 100vh">
+      <div class="container px-5">
+        <img src="assets/img/screenshot.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
+          width="700" height="auto" loading="lazy" />
+      </div>
+    </div>
+  </div>
+  <!---->
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="assets/img/ex01.gif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500"
+          height="300" loading="lazy" />
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-6 fw-bold lh-1 mb-3">
+          Uma ferramenta completa para o seu dia a dia.
+        </h1>
+        <p class="lead">
+          Para algumas coisas, arrastar e soltar não é suficiente. É por isso
+          que o Bootstrap Studio oferece controle total sobre sua marcação
+          quando você precisar. Você pode importar e editar CSS, SASS,
+          JavaScript e HTML em nosso editor Sublime Text-like.
+        </p>
+
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <!---->
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-lg-6">
+        <h1 class="display-6 fw-bold lh-1 mb-3">
+          Crie designs responsivos sem muito esforço.
+        </h1>
+        <p class="lead">
+          O aplicativo possui ferramentas especializadas para trabalhar com a
+          grade do Bootstrap. Crie, redimensione e desloque colunas com
+          facilidade e aplique classes de visibilidade responsivas
         </p>
       </div>
-      <div class="overflow-hidden" style="max-height: 100vh">
-        <div class="container px-5">
-          <img
-            src="assets/img/screenshot.jpg"
-            class="img-fluid border rounded-3 shadow-lg mb-4"
-            alt="Example image"
-            width="700"
-            height="auto"
-            loading="lazy"
-          />
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="assets/img/visualguy.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500"
+          height="300" loading="lazy" />
+      </div>
+    </div>
+  </div>
+  <!---->
+  <div class="bg-dark text-secondary px-4 py-5 text-center">
+    <div class="py-5">
+      <h1 class="display-6 fw-bold text-white">
+        Fique por dentro das novidades!
+      </h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-5 mb-4">
+          Assine nossa newsletter e saiba quando lançarmos novas versões.
+        </p>
+        <div class="form-floating">
+          <input type="email" class="form-control" id="floatingInput" placeholder="usuario@exemplo.com" />
+          <label for="floatingInput">Digite seu e-mail para assinar nossa newsletter</label>
+        </div>
+        <br /><br />
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="planos.html"><button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+              Ver planos
+            </button>
+          </a>
+          <a href="lista.html"><button type="button" class="btn btn-outline-light btn-lg px-4">
+              Lista de espera
+            </button>
+          </a>
         </div>
       </div>
     </div>
-    <!---->
-    <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
-          <img
-            src="assets/img/ex01.gif"
-            class="d-block mx-lg-auto img-fluid"
-            alt="Bootstrap Themes"
-            width="500"
-            height="300"
-            loading="lazy"
-          />
-        </div>
-        <div class="col-lg-6">
-          <h1 class="display-6 fw-bold lh-1 mb-3">
-            Uma ferramenta completa para o seu dia a dia.
-          </h1>
-          <p class="lead">
-            Para algumas coisas, arrastar e soltar não é suficiente. É por isso
-            que o Bootstrap Studio oferece controle total sobre sua marcação
-            quando você precisar. Você pode importar e editar CSS, SASS,
-            JavaScript e HTML em nosso editor Sublime Text-like.
-          </p>
+  </div>
 
-          <p></p>
-        </div>
-      </div>
-    </div>
-    <!---->
-    <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-lg-6">
-          <h1 class="display-6 fw-bold lh-1 mb-3">
-            Crie designs responsivos sem muito esforço.
-          </h1>
-          <p class="lead">
-            O aplicativo possui ferramentas especializadas para trabalhar com a
-            grade do Bootstrap. Crie, redimensione e desloque colunas com
-            facilidade e aplique classes de visibilidade responsivas
-          </p>
-        </div>
-        <div class="col-10 col-sm-8 col-lg-6">
-          <img
-            src="assets/img/visualguy.png"
-            class="d-block mx-lg-auto img-fluid"
-            alt="Bootstrap Themes"
-            width="500"
-            height="300"
-            loading="lazy"
-          />
-        </div>
-      </div>
-    </div>
-    <!---->
-    <div class="bg-dark text-secondary px-4 py-5 text-center">
-      <div class="py-5">
-        <h1 class="display-6 fw-bold text-white">
-          Fique por dentro das novidades!
-        </h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="fs-5 mb-4">
-            Assine nossa newsletter e saiba quando lançarmos novas versões.
-          </p>
-          <div class="form-floating">
-            <input
-              type="email"
-              class="form-control"
-              id="floatingInput"
-              placeholder="usuario@exemplo.com"
-            />
-            <label for="floatingInput"
-              >Digite seu e-mail para assinar nossa newsletter</label
-            >
-          </div>
-          <br /><br />
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <a href="planos.html"
-              ><button
-                type="button"
-                class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
-              >
-                Ver planos
-              </button>
-            </a>
-            <a href="lista.html"
-              ><button type="button" class="btn btn-outline-light btn-lg px-4">
-                Lista de espera
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- FOOTER -->
+  <br /><br />
+  <footer class="container">
+    <p class="float-end"><a href="#">Voltar para o topo</a></p>
+    <p>
+      &copy; 2022-2023 FrontEnders &trade; &middot;
+      <a href="#">Privacidade</a> &middot; <a href="#">Termos</a>
+    </p>
+  </footer>
+  <!---->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
 
-    <!-- FOOTER -->
-    <br /><br />
-    <footer class="container">
-      <p class="float-end"><a href="#">Voltar para o topo</a></p>
-      <p>
-        &copy; 2022-2023 FrontEnders &trade; &middot;
-        <a href="#">Privacidade</a> &middot; <a href="#">Termos</a>
-      </p>
-    </footer>
-    <!---->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-  </body>
 </html>
