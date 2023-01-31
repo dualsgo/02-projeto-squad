@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FrontEnders &trade;</title>
+  <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/headers/" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/pricing/" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/features/" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/heroes/" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Custom styles for this template -->
+  <link href="../assets/css/headers.css" rel="stylesheet" />
+  <link href="../assets/css/pricing.css" rel="stylesheet" />
+  <link href="../assets/css/features.css" rel="stylesheet" />
+  <link href="../assets/css/heroes.css" />
+</head>
+<!---->
+
+<body>
+  <!-- Barra de navegação -->
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-auto">
+      <a href="../index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <!--         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-code-slash"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+                      </svg> -->
+        <b><span class="bg-primary text-white logo">
+            < Front </span>
+              <span class="text-primary bg-white logo">Enders / ></span>
+              &trade;</b></a>
+
+      <ul class="nav col-10 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li>
+          <a href="./planos.html" class="nav-link px-2 link-dark">Serviço</a>
+        </li>
+        <li>
+          <a href="./lista.html" class="nav-link px-2 link-dark">Lista</a>
+        </li>
+        <li>
+          <a href="./equipe.html" class="nav-link px-2 link-dark">Desenvolvedores</a>
+        </li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <a href="./login.html"><button type="button" class="btn btn-outline-primary me-2">
+            Login
+          </button></a>
+        <!--<a href="cadastro.html"><button type="button" class="btn btn-primary">Cadastro</button></a>-->
+      </div>
+    </header>
+  </div>
+  <!-- Barra de navegação -->
+  <!--Breve descrição do serviço-->
+  <main class="container">
+    <div class="container px-6 py-5" id="icon-grid">
+      <h2 class="pb-2 border-bottom">
+        Principais caracteristicas do nosso produto
+      </h2>
+
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4 py-5">
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#bootstrap" />
+          </svg>
+          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
+            <h4 class="fw-bold mb-0">Bootstrap</h4>
+            <p>Totalmente compatível com Bootstrap 3, 4 e 5</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#cpu-fill" />
+          </svg>
+          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0">
+            <h4 class="fw-bold mb-0">JavaScript</h4>
+            <p>Acesso a métodos JS prontos para maior praticidade.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#calendar3" />
+          </svg>
+          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+            <h4 class="fw-bold mb-0">Atalhos</h4>
+            <p>Permitem acelerar drasticamente o fluxo de trabalho..</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#home" />
+          </svg>
+          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400" data-aos-offset="0">
+            <h4 class="fw-bold mb-0">Layouts</h4>
+            <p>
+              Se você tiver um site desenvolvido anteriormente, poderá
+              importá-lo.
+            </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#speedometer2" />
+          </svg>
+          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="500" data-aos-offset="0">
+            <h4 class="fw-bold mb-1">Compatível</h4>
+            <p>Funciona em Win 7+, macOS, Linux.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#toggles2" />
+          </svg>
+          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="600" data-aos-offset="0">
+            <h4 class="fw-bold mb-0">Animações</h4>
+            <p>Biblioteca de animações em CSS.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#geo-fill" />
+          </svg>
+          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="700" data-aos-offset="0">
+            <h4 class="fw-bold mb-0">Sincronia</h4>
+            <p>A alteração de um alterará automaticamente o outro.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#tools" />
+          </svg>
+          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="800" data-aos-offset="0">
+            <h4 class="fw-bold mb-0">Tempo real</h4>
+            <p>Possui um recurso poderoso chamado Preview.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#tools" />
+          </svg>
+          <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="900" data-aos-offset="0">
+            <h4 class="fw-bold mb-0">Console de erros</h4>
+            <p>Acompanhe possíveis erros a medida que realiza os ajustes .</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Cards planos-->
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="check" viewBox="0 0 16 16">
+        <title>Check</title>
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+      </symbol>
+    </svg>
+    <!--Tabela planos-->
+    <div class="container py-3">
+      <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col" data-aos="flip-right" data-aos-easing="linear" data-aos-duration="1000">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Basic</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  R$<br />50<small class="text-muted fw-light"><br />/mês</small>
+                </h1>
+                <ul>
+                  <li>
+                    Para qualquer pessoa que queira criar designs por conta
+                    própria. <br /><br />
+                    Não é preciso ter experiência em design.
+                  </li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary">
+                  Saiba mais
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-aos="flip-right" data-aos-easing="linear" data-aos-duration="1000">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Premium</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  R$<br />100<small class="text-muted fw-light"><br />/mês</small>
+                </h1>
+                <ul>
+                  <li>
+                    Para aquelas pessoas que queiram ter acesso ilimitado a
+                    conteúdo premium, com ferramentas especiais para expandir
+                    sua marca ou projeto pessoal.
+                  </li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary">
+                  Saiba mais
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-aos="flip-right" data-aos-easing="linear" data-aos-duration="1000">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3 bg-primary text-white">
+                <h4 class="my-0 fw-normal">Squads</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">
+                  R$<br />1500<small class="text-muted fw-light"><br />/anual</small>
+                </h1>
+                <ul>
+                  <li>
+                    Para equipes de todos os tamanhos que queiram criar
+                    coletivamente, com ferramentas premium de trabalho e
+                    fluxos de aprovação.
+                  </li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary">
+                  Saiba mais
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="display-6 text-center mb-4">Compare os planos</h2>
+
+        <div class="table-responsive">
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <th style="width: 34%"></th>
+                <th style="width: 22%">Basic</th>
+                <th style="width: 22%">Premium</th>
+                <th style="width: 22%">Squads</th>
+              </tr>
+            </thead>
+            <tr data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+              <th scope="row" class="text-start">Aplicativo Desktop</th>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+            </tr>
+            <tr data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+              <th scope="row" class="text-start">Central de ajuda</th>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+            </tr>
+            <tr data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+              <th scope="row" class="text-start">Acesso ao fórum</th>
+              <td></td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+            </tr>
+            <tr data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+              <th scope="row" class="text-start">Conversor de imagens</th>
+              <td></td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+            </tr>
+            <tr data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+              <th scope="row" class="text-start">Membros simultâneos</th>
+              <td></td>
+              <td>
+                <!--                 <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg> -->
+              </td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+            </tr>
+            <tr data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+              <th scope="row" class="text-start">Segurança extra</th>
+              <td></td>
+              <td></td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+            </tr>
+            <tr data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+              <th scope="row" class="text-start">Biblioteca de imagens</th>
+              <td></td>
+              <td></td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+            </tr>
+            <tr data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+              <th scope="row" class="text-start">Biblioteca de layouts</th>
+              <td></td>
+              <td></td>
+              <td>
+                <svg class="bi" width="24" height="24">
+                  <use xlink:href="#check" />
+                </svg>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </main>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-dark">
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Nossa empresa
+            </h6>
+            <p class="text-primary fw-bold">
+              Desenvolvemos soluções para todos as necessidades do seu
+              negócio.<br />
+              Fundada em 2015 na região da zona norte da cidade do Rio de
+              Janeiro, a FrontEnders é uma empresa especialista em
+              desenvolvimento de sites profíssionais.
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Tecnologias</h6>
+            <p>
+              <!--<a href="#!" class="text-reset">HTML5</a>-->
+              HTML5
+            </p>
+            <p>
+              <!--<a href="#!" class="text-reset">CSS3</a>-->
+              CSS3
+            </p>
+            <p>
+              <!--<a href="#!" class="text-reset">JavaScript</a>-->
+              JavaScript
+            </p>
+            <p>Bootstrap</p>
+            <p>API Via Cep</p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Links úteis</h6>
+            <p>
+              <a href="./planos.html" class="text-reset">Planos</a>
+            </p>
+            <p>
+              <a href="./lista.html" class="text-reset">Lista de Espera</a>
+            </p>
+            <p>
+              <a href="./equipe.html" class="text-reset">Equipe</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+            <p>Irajá, Rio de Janeiro - RJ</p>
+            <p>contato@frontenders.com</p>
+            <p>+55 21 99875-4321</p>
+          </div>
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="d-flex align-items-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+      <a href="../index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <!--         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-code-slash"
+          viewBox="0 0 16 16">
+          <path
+            d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+        </svg> -->
+        <b><span class="bg-primary text-white logo">
+            < Front </span>
+              <span class="text-primary bg-white logo">Enders / ></span>
+              &trade;</b></a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <script src="../assets/js/bootstrap.bundle.min.js" defer></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

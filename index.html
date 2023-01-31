@@ -12,11 +12,12 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/pricing/" />
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/features/" />
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/heroes/" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
   <!-- Bootstrap core CSS -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-
-
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Custom styles for this template -->
   <link href="assets/css/headers.css" rel="stylesheet" />
   <link href="assets/css/heroes.css" rel="stylesheet" />
@@ -26,42 +27,44 @@
 <body>
   <!-- Barra de navegação -->
   <div class="container">
-    <header
-      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <a href="login.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-code-slash"
-          viewBox="0 0 16 16">
-          <path
-            d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
-        </svg>
-        <b>FrontEnders &trade;</b></a>
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-auto">
+      <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <!--         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-code-slash"
+                viewBox="0 0 16 16">
+                <path
+                  d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+              </svg> -->
+        <b><span class="bg-primary text-white logo">
+            < Front </span>
+              <span class="text-primary bg-white logo">Enders / ></span>
+              &trade;</b></a>
 
       <ul class="nav col-10 col-md-auto mb-2 justify-content-center mb-md-0">
         <li>
-          <a href="index.html" class="nav-link px-2 link-secondary">Início</a>
+          <a href="./views/planos.html" class="nav-link px-2 link-dark">Serviço</a>
         </li>
         <li>
-          <a href="planos.html" class="nav-link px-2 link-dark">Serviço</a>
+          <a href="./views/lista.html" class="nav-link px-2 link-dark">Lista</a>
         </li>
         <li>
-          <a href="lista.html" class="nav-link px-2 link-dark">Lista</a>
-        </li>
-        <li>
-          <a href="equipe.html" class="nav-link px-2 link-dark">Desenvolvedores</a>
+          <a href="./views/equipe.html" class="nav-link px-2 link-dark">Desenvolvedores</a>
         </li>
       </ul>
 
       <div class="col-md-3 text-end">
-        <a href="login.html"><button type="button" class="btn btn-outline-primary me-2">
+        <a href="./views/login.html"><button type="button" class="btn btn-outline-primary me-2">
             Login
           </button></a>
-        <a href="cadastro.html"><button type="button" class="btn btn-primary">Cadastro</button></a>
+        <!--<a href="cadastro.html"><button type="button" class="btn btn-primary">Cadastro</button></a>-->
       </div>
     </header>
   </div>
-  <!---->
-  <div class="px-4 pt-5 my-5 text-center border-bottom">
-    <h1 class="display-4 fw-bold">FrontEnders &trade; Studio</h1>
+  <!-- Barra de navegação -->
+
+  <div class="text-center pt-5 px-4">
+    <h1 class="display-4 fw-bold">
+      FrontEnders &trade; <span class="text-primary">Studio</span>
+    </h1>
     <h1 class="display-6 fw-bold">
       É um aplicativo de desktop para projetar e prototipar sites.
     </h1>
@@ -69,19 +72,21 @@
       <p class="lead mb-4">
         Ele vem com um grande número de componentes internos, que você pode
         arrastar e soltar para montar páginas da Web responsivas. O aplicativo
-        é construído sobre a estrutura extremamente popular do Bootstrap e
-        exporta HTML limpo e semântico.
+        é construído sobre a estrutura extremamente popular do
+        <span class="text-primary">Bootstrap</span> e exporta HTML limpo e
+        semântico.
       </p>
     </div>
-    <div class="overflow-hidden" style="max-height: 100vh">
+    <div class="overflow-hidden" style="max-height: 100vh" data-aos="zoom-out-up" data-aos-duration="2000">
       <div class="container px-5">
-        <img src="assets/img/screenshot.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
-          width="700" height="auto" loading="lazy" />
+        <img id="imagem" src="assets/img/css-editing.png" class="img-fluid border rounded-3 shadow-lg mb-4"
+          alt="Example image" width="700" height="auto" loading="lazy" />
       </div>
     </div>
   </div>
+
   <!---->
-  <div class="container col-xxl-8 px-4 py-5">
+  <div class="container col-xxl-8 px-4 py-5 border-bottom border-dark" data-aos="fade-left" data-aos-duration="2000">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src="assets/img/ex01.gif" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500"
@@ -89,25 +94,27 @@
       </div>
       <div class="col-lg-6">
         <h1 class="display-6 fw-bold lh-1 mb-3">
-          Uma ferramenta completa para o seu dia a dia.
+          Uma <span class="text-primary">ferramenta completa</span> para o seu
+          dia a dia.
         </h1>
         <p class="lead">
           Para algumas coisas, arrastar e soltar não é suficiente. É por isso
-          que o Bootstrap Studio oferece controle total sobre sua marcação
-          quando você precisar. Você pode importar e editar CSS, SASS,
-          JavaScript e HTML em nosso editor Sublime Text-like.
+          que o <span class="text-primary">Bootstrap Studio</span> oferece
+          controle total sobre sua marcação quando você precisar. Você pode
+          importar e editar
+          <span class="text-primary">CSS, SASS, JavaScript e HTML</span> em
+          nosso editor Sublime Text-like.
         </p>
-
-        <p></p>
       </div>
     </div>
   </div>
-  <!---->
-  <div class="container col-xxl-8 px-4 py-5">
+
+  <div class="container col-xxl-8 px-4 py-5" data-aos="fade-right" data-aos-duration="2000">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-lg-6">
         <h1 class="display-6 fw-bold lh-1 mb-3">
-          Crie designs responsivos sem muito esforço.
+          Crie <span class="text-primary">designs responsivos</span> sem muito
+          esforço.
         </h1>
         <p class="lead">
           O aplicativo possui ferramentas especializadas para trabalhar com a
@@ -121,14 +128,14 @@
       </div>
     </div>
   </div>
-  <!---->
+
   <div class="bg-dark text-secondary px-4 py-5 text-center">
     <div class="py-5">
       <h1 class="display-6 fw-bold text-white">
         Fique por dentro das novidades!
       </h1>
       <div class="col-lg-6 mx-auto">
-        <p class="fs-5 mb-4">
+        <p class="fs-5 mb-4 text-primary">
           Assine nossa newsletter e saiba quando lançarmos novas versões.
         </p>
         <div class="form-floating">
@@ -137,12 +144,12 @@
         </div>
         <br /><br />
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <a href="planos.html"><button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+          <a href="./views/planos.html"><button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
               Ver planos
             </button>
           </a>
-          <a href="lista.html"><button type="button" class="btn btn-outline-light btn-lg px-4">
-              Lista de espera
+          <a href="./views/lista.html"><button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+              Entrar na lista
             </button>
           </a>
         </div>
@@ -150,16 +157,93 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
-  <br /><br />
-  <footer class="container">
-    <p class="float-end"><a href="#">Voltar para o topo</a></p>
-    <p>
-      &copy; 2022-2023 FrontEnders &trade; &middot;
-      <a href="#">Privacidade</a> &middot; <a href="#">Termos</a>
-    </p>
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-dark">
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Nossa empresa
+            </h6>
+            <p class="text-primary fw-bold">
+              Desenvolvemos soluções para todos as necessidades do seu
+              negócio.<br />
+              Fundada em 2015 na região da zona norte da cidade do Rio de
+              Janeiro, a FrontEnders é uma empresa especialista em
+              desenvolvimento de sites profíssionais.
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Tecnologias</h6>
+            <p>
+              <!--<a href="#!" class="text-reset">HTML5</a>-->
+              HTML5
+            </p>
+            <p>
+              <!--<a href="#!" class="text-reset">CSS3</a>-->
+              CSS3
+            </p>
+            <p>
+              <!--<a href="#!" class="text-reset">JavaScript</a>-->
+              JavaScript
+            </p>
+            <p>Bootstrap</p>
+            <p>API Via Cep</p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Links úteis</h6>
+            <p>
+              <a href="./views/planos.html" class="text-reset">Planos</a>
+            </p>
+            <p>
+              <a href="./views/lista.html" class="text-reset">Lista de Espera</a>
+            </p>
+            <p>
+              <a href="./views/equipe.html" class="text-reset">Equipe</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+            <p>Irajá, Rio de Janeiro - RJ</p>
+            <p>contato@frontenders.com</p>
+            <p>+55 21 99875-4321</p>
+          </div>
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="d-flex align-items-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+      <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <!--         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-code-slash"
+          viewBox="0 0 16 16">
+          <path
+            d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+        </svg> -->
+        <b><span class="bg-primary text-white logo">
+            < Front </span>
+              <span class="text-primary bg-white logo">Enders / ></span>
+              &trade;</b></a>
+    </div>
+    <!-- Copyright -->
   </footer>
-  <!---->
+  <!-- Footer -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="assets/js/bootstrap.bundle.min.js" defer></script>
 </body>
 

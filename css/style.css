@@ -1,0 +1,100 @@
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Poppins', sans-serif
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ /*
+h1,
+p {
+    color: #000;
+}
+*/
+
+ .bd-placeholder-img {
+     font-size: 1.125rem;
+     text-anchor: middle;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     user-select: none;
+ }
+
+ @media (min-width: 768px) {
+     .bd-placeholder-img-lg {
+         font-size: 3.5rem;
+     }
+ }
+
+ .social-link {
+     width: 60px;
+     height: 60px;
+     border: 1px solid #0d6efd;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #0d6efd;
+     border-radius: 50%;
+     transition: all 0.3s;
+     font-size: 0.9rem;
+ }
+
+ .social-link:hover,
+ .social-link:focus,
+ #imagem:hover,
+ #imagem:hover {
+     background: #0d6efd;
+     text-decoration: none;
+     color: #fff;
+     border: 1px solid #fff;
+ }
+
+
+ /*  .bg-white:hover :not(:hover),
+ .col:hover :not(:hover),
+ #imagem:hover :not(:hover) {
+     opacity: 1;
+ } */
+
+ .bg-white:hover,
+ .col:hover,
+ #imagem:hover {
+     scale: 1.1;
+ }
+
+ /*
+LISTA
+form {
+    display: flex;
+    justify-content: space-around;
+}
+
+#divao1 {
+    border: solid;
+    padding: 1em;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+
+ .social:focus,
+ .social.hover {
+     text-decoration: none;
+     color: #fff;
+     border: 1px solid #fff;
+ }
+
+ .logo {
+     border: #0d6efd solid;
+     padding: .5em;
+ }

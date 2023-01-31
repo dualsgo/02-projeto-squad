@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FrontEnders &trade;</title>
+  <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/headers/" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/pricing/" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/features/" />
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/heroes/" />
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- Custom styles for this template -->
+  <link href="../assets/css/headers.css" rel="stylesheet" />
+  <link href="../assets/css/heroes.css" rel="stylesheet" />
+  <!--<link href="../assets/css/signin.css" rel="stylesheet" />-->
+</head>
+
+<body class="text-center">
+  <!-- Barra de navegação -->
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-auto">
+      <a href="../index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <!--         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-code-slash"
+                        viewBox="0 0 16 16">
+                        <path
+                          d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+                      </svg> -->
+        <b><span class="bg-primary text-white logo">
+            < Front </span>
+              <span class="text-primary bg-white logo">Enders / ></span>
+              &trade;</b></a>
+
+      <!--       <ul class="nav col-10 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li>
+          <a href="./planos.html" class="nav-link px-2 link-dark">Serviço</a>
+        </li>
+        <li>
+          <a href="./lista.html" class="nav-link px-2 link-dark">Lista</a>
+        </li>
+        <li>
+          <a href="./equipe.html" class="nav-link px-2 link-dark">Desenvolvedores</a>
+        </li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <a href="../index.html"><button type="button" class="btn btn-outline-primary me-2">
+            Login
+          </button></a>
+        <a href="cadastro.html"><button type="button" class="btn btn-primary">Cadastro</button></a> -->
+    </header>
+  </div>
+  <!-- Barra de navegação -->
+  <main>
+    <div class="text-dark px-4 text-center">
+      <div class="py-1">
+        <h1 class="display-4 fw-bold">Conectar-se</h1>
+        <p>Utilize os dados fornecidos no cadastro na lista de espera</p>
+      </div>
+    </div>
+    <form class="form-signin">
+      <div class="container">
+        <!-- 
+              <h1 class="h1 mb-3 fw-bold">Conectar-se</h1>
+              <div class="form-floating">
+                <p class="mt-3 mb-3 text-muted">
+                  Digite seu endereço de e-mail e sua senha.
+                </p>
+              </div>
+              <div class=" d-flex justify-content-center">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control w-50" id="email" name="email" placeholder="usuario@exemplo.com"
+                  required />
+              </div>
+              <div class="d-flex justify-content-center">
+                <label for="password">Senha:</label>
+                <input type="password" class="form-control w-50" id="password" name="password" placeholder='Digite sua senha'
+                  required />
+              </div>
+        
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me" /> Lembrar de mim
+                </label>
+              </div>
+              <button class="w-25 btn btn-lg btn-primary" type="submit">
+                Entrar
+              </button>
+              <br /><br />
+              <p><a href="senha.html">Esqueci minha senha</a></p> -->
+        <!--         
+        <h1 class="h1 mb-3 fw-bold">Conectar-se</h1>
+        <div class="form-floating">
+          <p class="mt-3 mb-3 text-muted">
+            Digite seu endereço de e-mail e sua senha.
+          </p>
+        </div> -->
+
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="email" id="email" class="form-control" />
+          <label class="form-label" for="form1Example1">Email</label>
+        </div>
+
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <input type="password" id="password" class="form-control" />
+          <label class="form-label" for="form1Example2">Senha</label>
+        </div>
+
+        <!-- Submit button -->
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="submit" class="text-white btn btn-primary btn-outline-info btn-lg px-4 me-sm-3 mb-4 fw-bold"
+            onclick="login();">
+            Entrar
+          </button>
+        </div>
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+              <label class="form-check-label" for="form1Example3">
+                Lembra de mim
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col m0">
+          <a href="senha.html">Esqueci minha senha </a>
+        </div>
+      </div>
+    </form>
+  </main>
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-dark">
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Nossa empresa
+            </h6>
+            <p class="text-primary fw-bold">
+              Desenvolvemos soluções para todos as necessidades do seu
+              negócio.<br />
+              Fundada em 2015 na região da zona norte da cidade do Rio de
+              Janeiro, a FrontEnders é uma empresa especialista em
+              desenvolvimento de sites profíssionais.
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Tecnologias</h6>
+            <p>
+              <!--<a href="#!" class="text-reset">HTML5</a>-->
+              HTML5
+            </p>
+            <p>
+              <!--<a href="#!" class="text-reset">CSS3</a>-->
+              CSS3
+            </p>
+            <p>
+              <!--<a href="#!" class="text-reset">JavaScript</a>-->
+              JavaScript
+            </p>
+            <p>Bootstrap</p>
+            <p>API Via Cep</p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Links úteis</h6>
+            <p>
+              <a href="./planos.html" class="text-reset">Planos</a>
+            </p>
+            <p>
+              <a href="./lista.html" class="text-reset">Lista de Espera</a>
+            </p>
+            <p>
+              <a href="./equipe.html" class="text-reset">Equipe</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contato</h6>
+            <p>Irajá, Rio de Janeiro - RJ</p>
+            <p>contato@frontenders.com</p>
+            <p>+55 21 99875-4321</p>
+          </div>
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="d-flex align-items-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+      <a href="../index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <!--         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-code-slash"
+          viewBox="0 0 16 16">
+          <path
+            d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
+        </svg> -->
+        <b><span class="bg-primary text-white logo">
+            < Front </span>
+              <span class="text-primary bg-white logo">Enders / ></span>
+              &trade;</b></a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <script src="../controllers/CadastroController.js"></script>
+  <script src="../controllers/LoginController.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js" defer></script>
+</body>
+
+</html>
